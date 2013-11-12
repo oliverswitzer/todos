@@ -1,0 +1,2 @@
+name = "Oliver"
+puts name
