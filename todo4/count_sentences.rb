@@ -3,13 +3,14 @@
 
 class String
   def count_sentences
-    str_re = /(\w+\.)+/
+    str_re = /(\s*\w+\.)*/
     m = str_re.match(self)
-    puts m.length 
-    puts m[1]
-    puts m[2]
-    puts m[3]
+    puts m
+    puts m.length
+    puts m.captures[1]
+    puts m.captures[2]
+    puts m.captures[3]
   end
 end
 
-"hello.there.how.are.you.".count_sentences
+"hello. there. person.".count_sentences
