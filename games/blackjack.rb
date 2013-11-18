@@ -137,6 +137,14 @@ class Blackjack
     end
   end
 
+  def win?
+    if @hitnumber <= 2 && @card_total == 21
+      true
+    else
+      false
+    end
+  end
+
 end
 
 blackjack = Blackjack.new
@@ -153,6 +161,8 @@ elsif
     if blackjack.lost?
       break 
       "Sorry, you lose. You hit one too many times!"
+    elsif blackjack.win?
+      puts "Congratulations, you win!"
     end
   end
 else
