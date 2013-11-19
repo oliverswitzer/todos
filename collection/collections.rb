@@ -17,7 +17,8 @@
 #   should transform into
 #   ["blake", "scott", "ashley"]
   f = [e[0], e[2], e[1]]
-# 7. using the following array create a hash where the elements in the array are the keys and the values of the hash are those elements with the 3rd character changed to a dollar sign.
+# 7. using the following array create a hash where the elements in the array are the keys and 
+# the values of the hash are those elements with the 3rd character changed to a dollar sign.
   puts "_______"
   hash = {}
   ["blake", "ashley", "scott"].each do |x|
@@ -46,6 +47,13 @@
     sum += num
   end
   puts sum
+
+  ### OR
+
+  [11,4,7,8,9,100,134].reduce(0) do |sum, number| #argument means start at the 0th element
+    sum + number   #add each number in the array to the sum
+  end
+
 # 12. Add an "s" to each word in the array except for the 2nd element in the array?
   j = ["hand","feet", "knee", "table"]
   j.each_with_index do |w, i|
