@@ -13,3 +13,12 @@ def make_list(arr)
     element.insert(0, "#{index + 1}. ")
   end
 end
+
+def make_list2(arr)
+  y = []
+  arr.each_with_index do |element, index|
+    y << "#{index + 1}. #{element}"
+  end
+  y
+end
+
