@@ -1,3 +1,6 @@
+gem 'debugger'
+require 'debugger'
+
 class Deli
 
   attr_accessor :line
@@ -10,6 +13,7 @@ class Deli
 
   def take_a_number name
     @line_count += 1
+    debugger
     @line << "#{line_count}. #{name.capitalize}"
     @line 
   end
