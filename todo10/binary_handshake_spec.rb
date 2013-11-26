@@ -29,7 +29,6 @@
 
 require_relative 'binary_handshake'
 
-
 RSpec.configure do |config|
   # Use color in STDOUT
   config.color_enabled = true
