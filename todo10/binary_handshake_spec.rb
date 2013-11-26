@@ -27,6 +27,9 @@
 
 # The program should consider strings specifying an invalid binary as the value 0.
 
+require_relative 'binary_handshake'
+
+
 RSpec.configure do |config|
   # Use color in STDOUT
   config.color_enabled = true
