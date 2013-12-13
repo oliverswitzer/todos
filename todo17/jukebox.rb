@@ -1,4 +1,5 @@
 require './song_library'
+require 'debugger'
 
 def jukebox(command)
   if command.downcase == "list"
@@ -22,6 +23,7 @@ end
 def parse_artist(command, lib)
   cmd = command.to_sym
   parsed = false
+  debugger
   if lib.has_key?(cmd)
     puts list_artist(command, lib[cmd])
     parsed = false
