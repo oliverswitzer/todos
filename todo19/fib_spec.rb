@@ -1,4 +1,4 @@
-require_relative "fibonacci_solution"
+require_relative "fib"
 
 describe "fibo finder" do
   
