@@ -9,8 +9,7 @@ end
 
 def pay_by_visa(order,ccn)
   pay_by order do |order|
-    order.payment :type => :visa , :ccn => ccn
-    order.verify_payment
+    pay_by()
   end
 end
 
