@@ -1,0 +1,1 @@
+fakearray_spec.rb
