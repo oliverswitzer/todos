@@ -1,0 +1,9 @@
+Site with error on it is at http://sewingandembroiderywarehouse.com/embtrb.htm
+
+The reason that elements get progessively bigger and bigger is because of the fact that h3 tags are nested within h3 tags for each new element on the page. There is another element inside each nested h3 element that looks like the following: 
+
+<width="25%" align="left"></width="25%">
+
+
+
+

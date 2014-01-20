@@ -21,15 +21,23 @@
 
 class FakeArray
 
+  attr_reader :array
+
+  def initialize(*args)   #splat will return an array of your arguments
+    array = args  
+  end
+
   def each
-    
+    array.each do |elem|
+      yield element if block_given? 
+    end
   end
 
   def first
     
   end
 
-  def []()
+  def []()    #you can call this function by putting your arg inside the [] 
     
   end
 

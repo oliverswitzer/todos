@@ -17,9 +17,7 @@ module Name
       @birth_date = params["birth_date"]
 
       @name = params["name"]
-
-      params.inspect
-
+      
       erb :birthday
     end
 
